@@ -34,6 +34,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    z-index: 2;
 }
 
 .titreHeader {
@@ -68,10 +69,49 @@ nav>a {
     margin: 0 10px 0 10px;
 }
 
+.boutonBurger {
+    display: none;
+    cursor: pointer;
+    border: 1px solid #fff;
+    width: 30px;
+    height: 30px;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 3;
+}
+
+.menuBurger {
+    position: fixed;
+    left: -100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--noir);
+    z-index: 2;
+    transition-duration: 0.5s;
+}
+.menuBurger>a {
+    text-decoration: none;
+    color: #fff;
+    margin: 10px 0 10px 0;
+    font-size: 1.5em;
+}
+.menuBurgerOpen {
+    left: 0;
+}
+
 /* RESPONSIVE */
 
 @media screen and (max-width: 1200px) {
     nav {
         display: none;
+    }
+
+    .boutonBurger {
+        display: flex;
     }
 }
