@@ -1,3 +1,5 @@
+/* GENERAL */
+
 html, body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
@@ -19,6 +21,9 @@ h1 {
     justify-content: center;
     align-items: center;
 }
+
+
+/* HEADER */
 
 header {
     position: fixed;
@@ -47,6 +52,8 @@ header {
     font-size: 1.5em;
 }
 
+/* NAV */
+
 nav {
     width: 650px;
     height: 40px;
@@ -59,4 +66,12 @@ nav>a {
     text-decoration: none;
     color: #fff;
     margin: 0 10px 0 10px;
+}
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 1200px) {
+    nav {
+        display: none;
+    }
 }
