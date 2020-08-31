@@ -5,6 +5,7 @@ html, body {
     margin: 0;
     padding: 0;
     --noir: #2f3542;
+    --bleu: #2980b9;
 }
 
 h1 {
@@ -12,7 +13,7 @@ h1 {
 }
 
 #accueil {
-    background: linear-gradient(45deg, rgba(0, 0, 0, 0.2) 50%, rgba(0, 0, 0, 0.2) 50%), url('../images/odet1.JPG');
+    background: linear-gradient(45deg, rgba(44, 62, 80,1.0) 60%, rgba(41, 128, 185,1.0) 40%);
     background-size: cover;
     background-position: center;
     height: 100vh;
