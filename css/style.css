@@ -14,7 +14,7 @@ html, body {
 }
 
 h1 {
-    font-family: 'Bangers', cursive;
+    font-family: 'Quicksand', sans-serif;
 }
 
 #accueil {
@@ -30,7 +30,7 @@ h1 {
 }
 
 .elt1 {
-    border: 1px solid #fff;
+    /* border: 1px solid #fff; */
     grid-column: 2 / span 3;
     grid-row: 2 /span 2;
     display: flex;
@@ -41,15 +41,16 @@ h1 {
 }
 
 .elt1 h1 {
-    font-size: 4em;
-    letter-spacing: 2px;
-    color: #FFD23F;
+    font-size: 3.5em;
+    color: #D1CCDC;
 }
 
 .elt1 p {
     position: relative;
-    bottom: 40px;
+    bottom: 50px;
     font-size: 1.5em;
+    font-family: 'Quicksand', sans-serif;
+    color: #D1CCDC;
 }
 
 .boutons {
@@ -66,16 +67,37 @@ h1 {
     text-decoration: none;
     color: #fff;
     padding: 10px;
-    border: 1px solid #fff;
-    background-color: #EE4266;
+    /* border: 1px solid #fff; */
+    background-color: #1B98E0;
+    font-family: 'Quicksand', sans-serif;
+    border-radius: 5px;
+    box-shadow: 4px 4px 4px #000;
+    transition-duration: 0.3s;
+}
+
+.boutons a:hover {
+    padding: 12px;
+    box-shadow: 6px 6px 4px #000;
+    font-size: 1.1em;
+}
+
+.boutons a:active {
+    padding: 8px;
+    box-shadow: 2px 2px 4px #000;
+    font-size: 0.9em;
 }
 
 .elt2 {
-    border: 1px solid #fff;
+    /* border: 1px solid #fff; */
     grid-column: 5 / span 3;
     grid-row: 2 /span 2;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.elt2 img {
+    width: 40%;
+
 }
