@@ -4,8 +4,7 @@ html, body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    --noir: #2f3542;
-    --bleu: #2980b9;
+    box-sizing: border-box;
 }
 
 :root {
@@ -15,6 +14,32 @@ html, body {
 
 h1 {
     font-family: 'Quicksand', sans-serif;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    color: #D1CCDC;
+    font-family: 'Quicksand', sans-serif;
+    /* border: 1px solid #fff; */
+}
+
+nav {
+    /* border: 1px solid #fff; */
+    position: relative;
+    right: 40px;
+    padding: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #D1CCDC;
+    margin: 0 10px 0 10px;
 }
 
 #accueil {
@@ -61,6 +86,8 @@ h1 {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+    position: relative;
+    bottom: 40px;
 }
 
 .boutons a {
@@ -98,6 +125,7 @@ h1 {
 }
 
 .elt2 img {
-    width: 40%;
-
+    width: 80%;
+    position: relative;
+    top: 30px;
 }
