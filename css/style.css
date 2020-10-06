@@ -5,6 +5,7 @@ html, body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 :root {
@@ -27,6 +28,11 @@ header {
     color: #D1CCDC;
     font-family: 'Quicksand', sans-serif;
     /* border: 1px solid #fff; */
+}
+
+header h2 a {
+    text-decoration: none;
+    color: #D1CCDC;
 }
 
 nav {
@@ -128,4 +134,18 @@ nav a {
     width: 80%;
     position: relative;
     top: 30px;
+}
+
+
+
+#presentation {
+    height: 100vh;
+    /* Background uigradients.com - #DarkSkies */
+    background: #4B79A1;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #283E51, #4B79A1);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #283E51, #4B79A1); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-gap: 5px;
 }
