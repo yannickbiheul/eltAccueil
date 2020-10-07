@@ -50,7 +50,7 @@ nav a {
 
 #accueil {
     height: 100vh;
-    background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/bubulles13.jpg);
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/fond-route.jpg);
     background-size: cover; 
     background-position: center;
     background-attachment: fixed;
@@ -69,12 +69,13 @@ nav a {
     justify-content: center;
     align-items: center;
     color: #fff;
+    text-align: center;
 }
 
 .elt1 h1 {
     font-size: 4.5em;
-    color: #E3B23C;
-    text-shadow: 2px 2px 4px #000;
+    color: #fff;
+    text-shadow: -4px 4px 4px #000;
 }
 
 .elt1 p {
@@ -83,6 +84,7 @@ nav a {
     font-size: 1.5em;
     font-family: 'Quicksand', sans-serif;
     color: #D1CCDC;
+    text-shadow: -1px 1px 4px #000;
 }
 
 .boutons {
@@ -92,7 +94,7 @@ nav a {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     position: relative;
     bottom: 40px;
 }
@@ -105,12 +107,11 @@ nav a {
     background-color: transparent;
     font-family: 'Quicksand', sans-serif;
     border-radius: 5px;
-    box-shadow: 4px 4px 4px #000;
+    box-shadow: -4px 4px 4px #000;
     transition-duration: 0.3s;
 }
 
 .boutons a:hover {
-    padding: 11px;
     box-shadow: 6px 6px 4px #000;
     font-size: 1.1em;
 }
@@ -131,10 +132,35 @@ nav a {
 }
 
 .elt3 a i {
-    color: #fff;
+    color: #D1CCDC;
     text-decoration: none;
     font-size: 3em;
     margin: 0 10px 0 10px;
+}
+
+@media screen and (max-width: 800px) {
+    header {
+        padding: 10px;
+        height: 40px;
+    }
+
+    nav {
+        display: none;
+    }
+    .elt1 {
+        grid-column: 1 / span 4;
+    }
+    .elt1 h1 {
+        font-size: 2.8em;
+    }
+
+    .elt1 p {
+        font-size: 1em;
+    }
+
+    .elt3 a i {
+        font-size: 2em;
+    }
 }
 
 
