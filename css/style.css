@@ -50,7 +50,7 @@ nav a {
 
 #accueil {
     height: 100vh;
-    background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/fond-route.jpg);
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/tech.jpg);
     background-size: cover; 
     background-position: center;
     background-attachment: fixed;
