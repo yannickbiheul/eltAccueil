@@ -1,3 +1,5 @@
+AOS.init();
+
 /* MENU BURGER */
 
 let boutonBurger = document.querySelector('.boutonBurger');
