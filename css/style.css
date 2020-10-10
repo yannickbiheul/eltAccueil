@@ -85,6 +85,7 @@ nav a:hover {
     font-size: 4.5em;
     color: #fff;
     text-shadow: -4px 4px 4px #000;
+    position: relative;
 }
 
 .elt1 p {
@@ -173,10 +174,12 @@ Pc Portable :
     }
     .elt1 h1 {
         font-size: 2.8em;
+        bottom: 40px;
     }
 
     .elt1 p {
         font-size: 1em;
+        bottom: 60px;
     }
 
     .elt3 a i {
