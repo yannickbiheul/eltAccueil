@@ -33,6 +33,7 @@ header {
 header h2 a {
     text-decoration: none;
     color: #D1CCDC;
+    display: none;
 }
 
 nav {
@@ -48,9 +49,13 @@ nav a {
     margin: 0 10px 0 10px;
 }
 
+nav a:hover {
+    color: #fff;
+}
+
 #accueil {
     height: 100vh;
-    background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/tech.jpg);
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/tech-50%.jpg);
     background-size: cover; 
     background-position: center;
     background-attachment: fixed;
@@ -136,6 +141,10 @@ nav a {
     text-decoration: none;
     font-size: 3em;
     margin: 0 10px 0 10px;
+}
+
+.elt3 a i:hover {
+    color: #fff;
 }
 
 @media screen and (max-width: 800px) {
