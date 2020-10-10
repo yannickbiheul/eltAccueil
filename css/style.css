@@ -1,4 +1,4 @@
-/* GENERAL */
+                                        /* ---------- GENERAL ---------- */
 
 html, body {
     font-family: 'Roboto', sans-serif;
@@ -16,6 +16,8 @@ html, body {
 h1 {
     font-family: 'Quicksand', sans-serif;
 }
+
+                                        /* ---------- HEADER ---------- */
 
 header {
     position: fixed;
@@ -52,6 +54,8 @@ nav a {
 nav a:hover {
     color: #fff;
 }
+
+                                        /* ---------- ACCUEIL ---------- */
 
 #accueil {
     height: 100vh;
@@ -147,7 +151,7 @@ nav a:hover {
     color: #fff;
 }
 
-
+                                        /* ---------- RESPONSIVE ---------- */
 
 /* 
 Téléphone : 360x640px
@@ -180,7 +184,7 @@ Pc Portable :
     }
 }
 
-
+                                        /* ---------- PRESENTATION ---------- */
 
 #presentation {
     height: 100vh;
