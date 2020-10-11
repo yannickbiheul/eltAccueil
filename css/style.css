@@ -1,6 +1,10 @@
                                         /* ---------- GENERAL ---------- */
 
-html, body {
+html {
+    font-size: 62.5%;
+}
+
+body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
@@ -26,7 +30,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    padding: 2rem;
     color: #D1CCDC;
     font-family: 'Quicksand', sans-serif;
     /* border: 1px solid #fff; */
@@ -41,14 +45,15 @@ header h2 a {
 nav {
     /* border: 1px solid #fff; */
     position: relative;
-    right: 40px;
-    padding: 10px;
+    right: 4rem;
+    padding: 1rem;
 }
 
 nav a {
     text-decoration: none;
     color: #D1CCDC;
-    margin: 0 10px 0 10px;
+    margin: 0 1rem 0 1rem;
+    font-size: 1.6rem;
 }
 
 nav a:hover {
@@ -66,8 +71,10 @@ nav a:hover {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(4, 1fr);
-    grid-gap: 5px;
+    grid-gap: 0.5rem;
 }
+
+                    /* TITRE, PARAGRAPHE ET BOUTONS */
 
 .elt1 {
     /* border: 1px solid #fff; */
@@ -81,56 +88,65 @@ nav a:hover {
     text-align: center;
 }
 
+                    /* TITRE */
+
 .elt1 h1 {
-    font-size: 4.5em;
+    font-size: 7rem;
     color: #fff;
-    text-shadow: -4px 4px 4px #000;
+    text-shadow: -0.4rem 0.4rem 0.4rem #000;
     position: relative;
 }
+
+                    /* PARAGRAPHE */
 
 .elt1 p {
     position: relative;
-    bottom: 50px;
-    font-size: 1.5em;
+    bottom: 5rem;
+    font-size: 2rem;
     font-family: 'Quicksand', sans-serif;
     color: #D1CCDC;
-    text-shadow: -1px 1px 4px #000;
+    text-shadow: -0.1rem 0.1rem 0.4rem #000;
 }
+
+                    /* BOUTONS */
 
 .boutons {
     /* border: 1px solid #fff; */
-    width: 150px;
-    height: 60px;
+    width: 30rem;
+    height: 12rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     position: relative;
-    bottom: 40px;
+    bottom: 4rem;
 }
 
 .boutons a {
     text-decoration: none;
+    font-size: 1.5rem;
     color: #fff;
-    padding: 10px;
-    border: 1px solid #fff;
+    padding: 1.8rem;
+    border: 0.1rem solid #fff;
     background-color: transparent;
     font-family: 'Quicksand', sans-serif;
-    border-radius: 5px;
-    box-shadow: -4px 4px 4px #000;
+    border-radius: 0.5rem;
+    box-shadow: -0.4rem 0.4rem 0.4rem #000;
     transition-duration: 0.3s;
 }
 
 .boutons a:hover {
-    box-shadow: 6px 6px 4px #000;
-    font-size: 1.1em;
+    box-shadow: 0.6rem 0.6rem 0.4rem #000;
+    font-size: 1.6rem;
 }
 
 .boutons a:active {
-    padding: 8px;
-    box-shadow: 2px 2px 4px #000;
+    padding: 0.8rem;
+    box-shadow: 0.2rem 0.2rem 0.4rem #000;
     font-size: 0.9em;
 }
+
+                    /* LOGOS RESEAUX SOCIAUX */
 
 .elt3 {
     /* border: 1px solid #fff; */
@@ -144,8 +160,8 @@ nav a:hover {
 .elt3 a i {
     color: #D1CCDC;
     text-decoration: none;
-    font-size: 3em;
-    margin: 0 10px 0 10px;
+    font-size: 4.5rem;
+    margin: 0 1rem 0 1rem;
 }
 
 .elt3 a i:hover {
@@ -155,9 +171,13 @@ nav a:hover {
                                         /* ---------- RESPONSIVE ---------- */
 
 /* 
-Téléphone : 360x640px
-Tablette : 600x960px
-Pc Portable : 
+Téléphone - portrait : width: 360px / height: 640px
+Téléphone - paysage : width: 640px / height: 360px
+Tablette - portrait : width: 600px / height: 960px
+tablette - paysage : width: 960px / height: 600px
+Pc Portable : width: 1536px / height: 864px
+Breakpoints - width : 601px, 1000px, 1200px
+Breakpoints - height : 700px, 1000px
 */
 
 @media screen and (max-width: 800px) {
@@ -173,17 +193,26 @@ Pc Portable :
         grid-column: 1 / span 4;
     }
     .elt1 h1 {
-        font-size: 2.8em;
+        font-size: 4.5rem;
         bottom: 40px;
     }
 
     .elt1 p {
-        font-size: 1em;
+        font-size: 1.7rem;
         bottom: 60px;
     }
 
     .elt3 a i {
         font-size: 2em;
+    }
+
+    .boutons {
+        width: 20rem;
+        height: 8rem;
+    }
+
+    .boutons a {
+        font-size: 1rem;
     }
 }
 
