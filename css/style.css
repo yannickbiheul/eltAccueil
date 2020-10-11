@@ -151,11 +151,11 @@ nav a:hover {
 
 .elt3 {
     /* border: 1px solid #fff; */
-    grid-column: 2 / span 2;
+    grid-column: 4 / span 2;
     grid-row: 4 / span 1;
     display: flex;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     position: relative;
 }
 
@@ -178,15 +178,17 @@ Téléphone - paysage : width: 640px / height: 360px
 Tablette - portrait : width: 600px / height: 960px
 tablette - paysage : width: 960px / height: 600px
 Pc Portable : width: 1536px / height: 864px
-Breakpoints - width : 601px, 1000px, 1200px
-Breakpoints - height : 700px, 1000px
 */
+
+                    /* ----- WIDTH < 1000px ----- */
 
 @media screen and (max-width: 1000px) {
     .elt1 {
         grid-column: 1 / span 4;
     }
 }
+
+                    /* WIDTH < 800px ----- */
 
 @media screen and (max-width: 800px) {
     header {
@@ -197,9 +199,7 @@ Breakpoints - height : 700px, 1000px
     nav {
         display: none;
     }
-    .elt1 {
-        grid-column: 1 / span 4;
-    }
+    
     .elt1 h1 {
         font-size: 6rem;
         bottom: 4rem;
@@ -216,7 +216,7 @@ Breakpoints - height : 700px, 1000px
     }
 
     .boutons a {
-        font-size: 1.9rem;
+        font-size: 1.5rem;
     }
 
     .elt3 a i {
@@ -224,14 +224,16 @@ Breakpoints - height : 700px, 1000px
     }
 }
 
+                    /* ----- WIDTH < 500px ----- */
+
 @media screen and (max-width: 500px) {
     .elt1 {
         bottom: 4rem;
     }
     .elt1 h1 {
-        font-size: 5rem;
+        font-size: 6rem;
         text-align: center;
-        padding: 0 2rem 0 2rem;
+        padding: 0 4rem 0 4rem;
     }
 
     .elt1 p {
@@ -241,9 +243,11 @@ Breakpoints - height : 700px, 1000px
 
     .elt3 {
         display: flex;
-        top: 1rem;
+        bottom: 3rem;
     }
 }
+
+                    /* ----- HEIGHT < 500px ----- */
 
 @media screen and (max-height: 500px) {
     .elt1 {
