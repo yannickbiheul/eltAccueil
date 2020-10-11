@@ -86,6 +86,7 @@ nav a:hover {
     align-items: center;
     color: #fff;
     text-align: center;
+    position: relative;
 }
 
                     /* TITRE */
@@ -113,7 +114,7 @@ nav a:hover {
 .boutons {
     /* border: 1px solid #fff; */
     width: 30rem;
-    height: 12rem;
+    height: 8rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -155,6 +156,7 @@ nav a:hover {
     display: flex;
     justify-content: center;
     align-items: flex-start;
+    position: relative;
 }
 
 .elt3 a i {
@@ -180,6 +182,12 @@ Breakpoints - width : 601px, 1000px, 1200px
 Breakpoints - height : 700px, 1000px
 */
 
+@media screen and (max-width: 1000px) {
+    .elt1 {
+        grid-column: 1 / span 4;
+    }
+}
+
 @media screen and (max-width: 800px) {
     header {
         padding: 10px;
@@ -193,17 +201,13 @@ Breakpoints - height : 700px, 1000px
         grid-column: 1 / span 4;
     }
     .elt1 h1 {
-        font-size: 4.5rem;
-        bottom: 40px;
+        font-size: 6rem;
+        bottom: 4rem;
     }
 
     .elt1 p {
-        font-size: 1.7rem;
-        bottom: 60px;
-    }
-
-    .elt3 a i {
-        font-size: 2em;
+        font-size: 1.9rem;
+        bottom: 6rem;
     }
 
     .boutons {
@@ -212,7 +216,50 @@ Breakpoints - height : 700px, 1000px
     }
 
     .boutons a {
-        font-size: 1rem;
+        font-size: 1.9rem;
+    }
+
+    .elt3 a i {
+        font-size: 4em;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .elt1 {
+        bottom: 4rem;
+    }
+    .elt1 h1 {
+        font-size: 5rem;
+        text-align: center;
+        padding: 0 2rem 0 2rem;
+    }
+
+    .elt1 p {
+        font-size: 1.8rem;
+        bottom: 6.5rem;
+    }
+
+    .elt3 {
+        display: flex;
+        top: 1rem;
+    }
+}
+
+@media screen and (max-height: 500px) {
+    .elt1 {
+        top: 4rem;
+    }
+
+    .elt1 p {
+        bottom: 9rem;
+    }
+
+    .boutons {
+        bottom: 8rem;
+    }
+
+    .elt3 {
+        display: none;
     }
 }
 
